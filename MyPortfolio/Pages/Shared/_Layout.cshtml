@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Nandan</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyPortfolio.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" asp-append-version="true" />
+</head>
+<body style="background: url('@Model.BackgroundImage') no-repeat center center/cover;">
+    <style>
+       
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container text-center">
+            <a class="navbar-brand mx-auto" id="sitename" href="#hero">Nandan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="social-icons ms-3">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>  
+    </div>
+    </nav>
+
+    <div id="hero" class="hero">
+            @RenderBody()
+    </div>
+
+    <div id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We provide amazing solutions for your business.</p>
+        </div>
+    </div>
+
+    <div id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>We offer web development, design, and consulting services.</p>
+        </div>
+    </div>
+    
+    <div id="project" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Please find the projects</p>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Reach out to us for more information and support.</p>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - Nandan Prajapati 
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

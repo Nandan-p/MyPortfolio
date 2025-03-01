@@ -1,0 +1,73 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+}
+#sitename {
+    font-family: Trattatello, fantasy;
+    font-weight: 800;
+}
+.navbar {
+    background: rgba(0, 0, 0, 0.6); /* Transparent Navbar */
+}
+
+.hero {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    font-family:Andale Mono, monospace;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#about {
+    background: #f8f9fa;
+}
+
+#resume {
+    background: rgb(184 192 200);
+}
+#project {
+    background: #bfcedd;
+}
+
+#contact {
+    background: #dee2e6;
+}
+.social-icons a {
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.container h2 {
+    font-family:Georgia, serif;
+}
+.container p {
+    font-family: Courier New, monospace;
+}
